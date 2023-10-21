@@ -1,0 +1,166 @@
+@charset "UTF=8";
+
+*{
+    @font-face {
+        font-family: 'Khand';
+        src: url('fonts/Khand-Bold.ttf') format ('truetype');
+        font-weight: normal;
+        font-style: normal;
+        /*
+        Tipos de formato para tipografia externas e personalizadas
+        - Opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-att (Apple Advanced Typography)
+        - svg
+        */
+    }
+    
+    div {
+        display: inline-block;
+        background-color: brown;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }   
+
+    div:
+
+    div:hover {
+        background-color: yellow;
+    }
+
+    h1{
+        text-align: center
+    }
+
+    h2{
+        text-align:right
+    }
+    p{
+        text-indent: 30px
+    }
+
+    font-family: khand;
+    font-weight: 200;
+    background-attachment: fixed;
+    /*
+    Medidas Absolutas
+    cm, mm, in, px, pt, pc
+    
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+
+    Utilizar só o tamanho da fonte em 'px' ou 'em'
+    16px corresponde geralmente a 1em
+
+    Podemos fazer um chamado 'shorthand font' para eliminar linhas de texto: Ex:
+
+    font-family: Khand;
+    font-weight: 200;
+    font-size: 1em;
+    font-style: italic;
+    em vez de isto pode ser só isto nesta ordem:
+    font style -> font-weight -> font size -> font family
+
+    font: italic bold 2em khand 
+
+    */
+}
+
+body {
+    font size: 16px ;
+    background-image: linear-gradient(to bottom, #F0F0F0 60%, #C8C8C8);
+}
+
+/*  Em HTML é 'id' = em CSS é um '#'
+    Este ID permite individualizar uma personalização na CSS. Ex . Dentro da tag h1 pode ser um h1 com uma personalização especial. SÓ SE DEVE UILIZAR 1 ID POR PÁGINA HTML.
+
+    Em HTML é 'class = "basico"' = em CSS é um '.basico' . Serve para definir diversos estilos e classes. Podes definir diversos atributos dentro da mesma class
+
+    Ainda existem as pseudo classes que são representados por ':' . Eles têm de estar ligadas a um elemento id ou uma classe. Representa o estado de um determinado elemento. Por exemplo o hover. O hover é uma pseudoclasse. Dentro de uma tag  podes atribuir uma pseudo class para elemento dinamicos. Configuração de um estado.
+
+    Também existem os pseudo elementos. Eles mexem no conteudo dentros das classes, id e pseudo classe   São representados por '::' 
+
+Simbolos
+
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children de uma tag
+
+    */
+
+/* Aqui um exemplo em CSS de um 'id'  = '#'*/
+h1#principal {
+    text-align: center;
+}
+/* Aqui um exemplo em CSS de uma 'class'  =  '.'*/
+.basico {
+    color: #73181A;
+}
+
+.avancado {
+    color: aqua ;
+}
+
+/* Aqui um exemplo em CSS de uma 'pseduo class'  =  ':'- A*/
+div > p {
+    display: none
+}
+
+div:hover > p {
+    display: block;
+    color: white;
+    background-color: red;
+    width: 300px;
+}
+
+div:hover {
+    color: red
+}
+
+/* Aqui um exemplo em CSS de um pseudo elemento  = '::'*/
+
+a::after {
+    content: 'link';
+    text-decoration: none;
+    color: chartreuse;
+}
+
+h1{
+    font-family: khand;
+}
+main {
+    font size: 20px ;
+    background-color: #F0F0F0;
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px#5958595d;
+ }
+
+/* Color Theme Swatches in Hex */
+.Paleta-CINCO-1-hex { color: #0D0C0D; }
+.Paleta-CINCO-2-hex { color: #C8C8C8; }
+.Paleta-CINCO-3-hex { color: #595859; }
+.Paleta-CINCO-4-hex { color: #73181A; }
+.Paleta-CINCO-5-hex { color: #F0F0F0; }
+
+/* Color Theme Swatches in RGBA */
+.Paleta-CINCO-1-rgba { color: rgba(13, 12, 13, 1); }
+.Paleta-CINCO-2-rgba { color: rgba(200, 200, 200, 1); }
+.Paleta-CINCO-3-rgba { color: rgba(89, 88, 89, 1); }
+.Paleta-CINCO-4-rgba { color: rgba(115, 24, 26, 1); }
+.Paleta-CINCO-5-rgba { color: rgba(240, 240, 240, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Paleta-CINCO-1-hsla { color: hsla(300, 4, 4, 1); }
+.Paleta-CINCO-2-hsla { color: hsla(0, 0, 78, 1); }
+.Paleta-CINCO-3-hsla { color: hsla(300, 0, 34, 1); }
+.Paleta-CINCO-4-hsla { color: hsla(358, 65, 27, 1); }
+.Paleta-CINCO-5-hsla { color: hsla(0, 0, 94, 1); }
+

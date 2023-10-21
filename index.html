@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Favicon CINCO.png" type="image/x-icon">
+    <title>HTML FORMAÇÃO</title>
+    <style> mark {background-color: blue;}
+    </style>
+</head>
+<body>
+    <H1> Bem vindo, Treinador!</H1>
+    <hr> <!--Tag 'hr' para acrescentar uma linha divisória--> 
+    <p> Muito obrigado por fazeres <br> parte da nossa equipa.</p> <!--Tag 'br' para quebrar o texto break row--> 
+_________________________________________________________________
+<h1>Parágrafos e quebras de linhas</h1>
+    <hr>
+    <p>Voce pode escrever
+        um paragrafo de qualquer jeito
+        basta colocar tudo no meio
+        do par de tags 
+        &lt;p&gt; e &lt;/p&gt; <!--&gt  é < Less then e &gt é Greater than > -->
+       </p>
+       <p> Se precisar de quebrar <br>
+        o texto em algum lugar
+       </p>
+<p>Vamos adicionar simbolos especiais
+    &reg;
+    &copy;
+    &trade;
+    &euro;
+    &pound;
+    &cent;
+    &Delta;
+    &Uarr;
+</p>
+<p>Vamos adicionar emojis
+🖖
+&#x1F596; <!--Também dá para copias e colar o emoji mas a melhor maneira de colocar o emoji é usar a tag '&#x' seguida do codepoint de cada emoji retirando o 'U+' -->
+&#x1F1F5&#x1F1F9;   ou &#127477;&#127481; &#x1F1F5;&#x1F1F9;</p>
+________________________________________________________________
+<h1>Introdução de Imagens</h1>
+
+    <h2>Teste carga e imagens</h2>
+    <p>Abaixo vais encontrar uma imagem</p>
+    <p>Podemos também carregar fotos em sub pastas</p>
+    <img src="imagens/Mário-Franco.png" alt="">
+    <p>Também podemos carregar imagens externas</p>
+    <img src="https://cdn.iconscout.com/icon/free/png-256/free-html5-19-722707.png" alt="Logo HTML5">  <!--Nota_ Para selecionar a foto a fonte da imagem dentro da tag 'img src " CTRL + ESPAÇO"-->
+<p>Embeber ficheiros pdf</p>
+<embed src="imagens/PDF Editável Unidade de Treino Basquetebol.pdf" type="">
+
+        <h3>Olha aqui o Favicon aqui em cimaaa</h3> <!--Para adicionar o Favicon, criar a Tag 'Link - Favicon' na Head do HTML logo antes do Nome da página -->
+
+____________________________________________________
+<H1>Diversas formatações de texto</H1>
+
+<h2>Entendento Portugal</h2>
+<h2>Introdução</h2>
+<h3>Justificação da temática</h3>
+<h4>Instrumentos de analise</h4>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, reprehenderit saepe dolore veritatis expedita libero sequi nemo. In ab velit, saepe qui consequatur, commodi quibusdam ullam perferendis eveniet obcaecati quo.</p>
+<h3>Perguntas de partida</h3>
+<h4>Instrumentos de analise</h4>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum voluptate ullam quisquam blanditiis nam. Itaque fuga fugiat modi a tenetur ea, ipsam voluptatibus quae, ab non facere soluta? Mollitia, officia.</p>
+<h2>Ordenamento do Território em Portugal</h2>
+<!-- Isto é a semantica da informação. A relação é entre os H1 ao H6 e os /p de paragrafos-->
+
+<h1>Principais formatações</h1>
+<h2>Negrito / Destaque</h2>
+<p>Nesta frase temos um termo <b>em bold</b> usando a tag B (não semantica e só tem forma. Não tem sentido)</p>
+<p>Nesta frase temos um termo <strong>em destaque</strong> usando a tag STRONG (É semantica, tem sentido.)</p>
+
+<h2>Titulo em itálico</h2>
+<p>Nesta frase, temos um termo em <i>itálico</i> usando a tag I (não semantica) </p>
+
+<p>Nesta frase, temos um <strong><i>termo em itálico</i></strong> usando a tag I (não semantica) </p>  <!-- Um atalho fixe para fazer o wrap de palavras numa tag. Selecionar com o cursor o que queres por exemplo 'termo em italico' = CTRL + SHIFT + P  = WRAP ABBREVIATION + letra da tag -->
+
+<p>Nesta frase temos um <em>termo em destaque</em> usando a tag  EM = enfase (Esta tag é sementica, com significado)</p>
+
+<h2>Texto Marcado</h2>
+<p>Podemos criar também <mark style="background-color: rgb(18, 199, 57);">um texto marcado</mark> usando a tag MARK</p>  <!-- Dentro das tag é possivel criar um style (css) como neste exemplo da tag mark-->
+
+<p>E no outro parágrafo temos <mark>outro texto de outra cor</mark> no final</p>
+
+<h2>Texto grande e pequeno</h2>
+<p>Estamos a criar um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo</p>
+
+<h2>Texto excluído (riscado)</h2>
+<p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+<h2>Texto inserido</h2>
+<p>Podemos marcar um <ins>texto como inserido</ins> para dar enfase e indicar que ele foi adicionado depois (tag semantica)</p>
+<p>Existe também o <u>sublinhado</u> com a tag U (não semantica) </p>
+
+<h2>Texto sobrescríto</h2>
+<p>Para inserir coisas do tipo x<SUP>20</SUP>+3</p>
+<h2>Texto subscríto</h2>
+<p>Para inserir coisas do tipo H<SUB>2</SUB>0</p>
+
+<h1>Outras formatações</h1>
+<h2>Código-fonte / Pré formatado</h2>
+<p>O comando <code>document.getElementById('teste')</code> escrito em linguagem JavaScript</p>
+<pre>
+    <code>
+num = int(input('Digite um numero'))
+if num % 2 == 0:
+    print(f'0 número {num} é PAR)
+else:
+    print(f'0 número {num} é ÍMPAR)
+print ('Fim do programam')
+    </code>
+</pre>
+<h2>Citação</h2>
+<p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!--Quando é uma citação usar sempre a tag semantica Q de Quote-->
+<h2>Citações completa</h2>
+<p>Segundo o Jeff Noble, no seu livro HTML para leigos:</p>
+<blockquote cite="www.cincoclipboards.pt/treinadoreslorem">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsam quae aliquid. Numquam, vitae unde nesciunt, consequuntur obcaecati ad, velit iste provident vero nam quo temporibus dignissimos molestias vel saepe.
+</blockquote>
+<!--Usar o parametro 'cite' citação ATENÇÃO colocar o parametro dentro da tag blockquote. É bom para o google saber de onde vem e manter os direitos de autor-->
+
+<h2>Abreviações</h2>
+<p>Estou a estudar <abbr title="Hypertext Markup">html</abbr> e <abbr title="Cascading Style Sheets">css</abbr> e é incrivel! </p>  <!--Envelopar com a tag ABBR permite criar uma descrição a uma abreviatura, criando um mini pop up. Ex. USA (Pop up com United States of America)-->
+
+<h2>Texto invertido</h2>
+<p><bdo dir="rtl">Estou a aprender a criar coisas em HTML</bdo></p>
+<p><bdo dir="ltr">Estou a aprender a criar coisas em HTML</bdo></p>
+
+___________________________________________________
+<h1>Listas OL e UL</h1>
+<H2>Listas Ordenadas(OL)</H2>
+<ol type="i"> <!-- Tipos existentes 1 A a i I-->
+    <li>Acordar</li>
+    <li> Ligar ao João</li>
+    <li> Beber café</li>
+    <li> Arrumar a casa</li>    
+</ol>
+<H2>Listas não ordenadas</H2>
+<ul type="square"> <!-- Disc ou Circle ou Square-->
+    <li>Leite
+    <li> Arroz
+    <li>Açucar
+</ul>
+<h2>Minhas linguagens favoritas</h2>
+<ol>
+    <li>Antigas</li>
+    <ul type = "Square">
+        <li>Clipper</li>
+        <li>Delphi</li>
+        <li>Visual Base</li>
+    </ul>
+    <li>Novas</li>
+    <ul type = "Circle">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>    
+    </ul>
+</ol>
+<h2>Lista de definições</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interactividade de um site</dd>
+</dl>
+____________________________________________________
+<h1>Links e Âncoras em HTML5</h1>
+<h2>Usar links externos</h2>
+<p>Podes ver aqui o meu <a href="https://zaask.pt/user/mriof20" target="_blank" rel="external">portefólio na ZAASK</a></p> <!--Quando for um link externo clica para abrir numa aba nova. Para abrir o link numa aba nova usar dentro da tag A colocar TARGET=_blank + rel="external"-->
+
+<h2>Usar links internos</h2>
+<p>Esta é a home page do nosso site. Poderás aceder à nossa <a href="pag002.html" rel="next">segunda página aqui!</a></p> <!--Nota_ Para selecionar a outra página seleciona CTRL + ESPAÇO"-->
+<p>Aqui poderás ver a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias!</a></p>
+
+___________________________________________________
+<h1>Links para download</h1>
+<ul>
+    <li><a href="imagens/APP CINCO DESKTOP.pdf" donwload="APP CINCO DESKTOP.PDF" type="application/pdf" target="_blank" rel="internal">Baixar o livro para download</a></li>
+    <li><a href="imagens/PDF Editável Unidade de Treino Basquetebol.zip" download="PDF Etitável Unidade de Treino Basquetebol.zop" type="application/zip" rel="internal" >Planning Anual</a></li>
+</ul>
+___________________________________________________
+<h1>Imagens Dinâmicas para responsividade</h1>
+<p>Tente abrir este site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+<picture>
+    <source media="(max-width: 700px)" srcset="imagens/Imagem_teste-pequena_300.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="imagens/Imagem_teste-media_700.png" type="image/png">
+    <img src="imagens/Imagem_teste-grande_1000.png" alt="Imagem flexivel" type="image/png">
+</picture>
+<!--Para o dinamismo dos tamanho das imagens a tag source tem de estar por ondem. Da mais pequena para grande. Na tag Source > media size-->
+
+___________________________________________________
+<h1>Reproduzir audio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML</p>
+<audio preload="metadata" autoplay src="imagens/factoryambient.mp3" controls loop muted></audio>
+
+<!--Convem inserir vários formatos de áudio para os diversos browsers, para maior contabilidade, exemplo abaixo:-->
+<audio>
+    <source src="imagens/factoryambient.mp3" type="audio/mpeg">
+    <source src="imagens/factoryambient.mp3" type="audio/ogg">
+    <source src="imagens/factoryambient.mp3" type="audio/wav">
+</audio>
+<p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="imagens/factoryambient.mp3">Clique aqui para fazer o download do áudio.</a></p>
+
+________________________________________________________________
+<h1>Reproduzir vídeos hospedados localmente</h1>
+<p>Este video está hospedado no meu próprio servidor</p>
+<video controls src="imagens/meuvideo.mp4" width="500px"></video>
+
+<!--Convem inserir vários formatos de vídeo para os diversos browsers, para maior contabilidade, exemplo abaixo:-->
+
+<video controls width="650px" poster="imagens/Mário-Franco.png">
+    <source src="imagens/meuvideo.mp4" type="video/mp4">
+    <source src="imagens/meuvideo.mp4" type="video/webm">
+    <source src="imagens/meuvideo.mp4" type="audio/ogg">
+</video>
+<p>Infelizmente o seu navegador não consegue reproduzir este vídeo. <a href="imagens/meuvideo.mp4">Clique aqui para fazer o download do vídeo.</a></p>
+_____________________________________________________
+<h1>Reproduzir vídeos hospedados externamente (Youtube)</h1>
+<p>Este video está hospedado externamente</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HwC9jnCkyC4?si=fiXfUZK1mC6mtj2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+___________________________________________________
+<h1>Estilos Inline</h1>
+
+<h2>Capitulo 1</h2>
+<h3>Capitulo1.1</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut vel illo illum, veniam veritatis magni recusandae modi deleniti repellendus corrupti quas suscipit quam necessitatibus, reprehenderit saepe commodi, soluta doloremque.</p>
+<h2>Capitulo 2</h2>
+<h3>Capitulo2.2</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut vel illo illum, veniam veritatis magni recusandae modi deleniti repellendus corrupti quas suscipit quam necessitatibus, reprehenderit saepe commodi, soluta doloremque.</p>
+
+<!-- Inserir videos do Youtube, ir buscar o código html no partilhar-->
+
+<style> 
+    body {
+        background-color: rgb(201, 201, 201); 
+        font-family: khand;}
+    </style>
+    <!--Tudo o que seja de estilo e forma TEM DE SER dentro da tag 'style' em CSS  '{ }' -->
+
+
+</body>
+</html>
