@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: khand, Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="formulário.php" method="post" autocomplete="on">
+
+        <p><label for="inome">Nome:</label>
+            <input required minlength="5" maxlength="15" type="text" name="Nome" id="inome" autocomplete="username"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="Sobrenome" id="isobrenome" placeholder="nome usu"></p>
+
+        <p><label for="isen">Senha:</label>
+        <input type="password" required minlength="8" maxlength="20" name="sen" id="isen" autocomplete="new-password"></p>
+
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+</body>
+</html>
